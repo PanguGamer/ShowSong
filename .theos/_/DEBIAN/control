@@ -1,0 +1,10 @@
+Package: com.pangucoding.showsong
+Name: ShowSong
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: PanguCoding
+Author: PanguCoding
+Section: Tweaks
+Version: 0.0.1-32+debug
+Installed-Size: 172
