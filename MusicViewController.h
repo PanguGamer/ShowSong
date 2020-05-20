@@ -1,6 +1,14 @@
 #import <UIKit/UIKit.h>
 
 @interface MusicViewController: UIWindow <UIApplicationDelegate> {
-    UILabel *songLabel;
+
 }
+
+@property UILabel *songLabel;
+@property UILabel *artistLabel;
+@property UILabel *albumLabel;
+@property UIImageView *albumImage;
+
+@property NSLayoutConstraint *yPosConstraint;
+
 @end
