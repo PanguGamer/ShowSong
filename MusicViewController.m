@@ -3,20 +3,20 @@
 @implementation MusicViewController
 
 - (id)init {
-    self = [super initWithFrame:CGRectMake(10, 10, 200, 50)];
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+
+    self = [super initWithFrame:CGRectMake(10, 10, width - 20, 80)];
 
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        self.windowLevel = UIWindowLevelStatusBar + 10000;
-        self.hidden = NO;
+        self.backgroundColor = [UIColor whiteColor];
+        self.windowLevel = UIWindowLevelStatusBar + 1000;
         self.layer.cornerRadius = 10;
+        [self makeKeyAndVisible];
 
-        songLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 30, 10)];
-        songLabel.backgroundColor = [UIColor whiteColor];
+        songLabel = [[UILabel alloc] initWithFrame:CGRectMake(70, 10, width - 70, 20)];
         songLabel.textColor = [UIColor blackColor];
-        songLabel.textColor = [UIColor whiteColor];
-        songLabel.text = [NSString stringWithFormat: @"SONG TEST TEST"];
-        songLabel.font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(36.0)];
+        songLabel.text = @"Song Title";
+        songLabel.font = [UIFont fontWithName:@"San Francisco" size:(20.0)];
         songLabel.clipsToBounds = YES;
         [self addSubview:songLabel];
     }
